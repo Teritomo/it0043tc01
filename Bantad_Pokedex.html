@@ -1,9 +1,116 @@
-<html lang = "en">
-  <head>
-    <title> Pokedex </title>
-  </head>
-<body>
-  <form name = "National Dex" action = "national.php">
-    National Dex: <input type ="text" name = "national">
-  </form>  
-</body>  
+<html lang="en">
+    <head>
+        <title>My Pokedex</title>
+    </head>
+    <body>
+        <form name="National Dex" action="national">
+           <center> 
+            National Dex: <input type="number" name="National"> 
+        
+            <br>
+            <input type="radio" id="1" name="Generation"> Generation 1 
+            <input type="radio" id="2" name="Generation"> Generation 2 
+            <input type="radio" id="3" name="Generation"> Generation 3 
+            <input type="radio" id="4" name="Generation"> Generation 4 
+            <input type="radio" id="5" name="Generation"> Generation 5 
+            <input type="radio" id="6" name="Generation"> Generation 6
+            <input type="radio" id="7" name="Generation"> Generation 7 
+            <input type="radio" id="8" name="Generation"> Generation 8 
+            <input type="radio" id="9" name="Generation"> Generation 9  
+            </br>
+
+            <br>
+            Pokemon Name: <input type="text" id="Pokemon Name" name="Pokemon Name">
+            </br>
+
+            <br>
+            Image: <input type="file" id="Image" name="Image">
+            </br>
+
+            <br>
+            Type 1: <select>
+                <option value="Normal"> Normal </option> 
+                <option value="Fire"> Fire </option> 
+                <option value="Bug"> Bug </option> 
+                <option value="Dark"> Dark </option> 
+                <option value="Flying"> Flying </option> 
+                <option value="Poison"> Poison </option> 
+                <option value="Psychic"> Psychic </option>
+                <option value="Ghost"> Ghost </option> 
+                <option value="Dragon"> Dragon </option> 
+                <option value="Electric"> Electric </option> 
+                <option value="Grass"> Grass </option> 
+                <option value="Rock"> Rock </option> 
+                <option value="Fairy"> Fairy </option> 
+                <option value="Ground"> Ground </option> 
+                <option value="Steel"> Steel </option> 
+                <option value="Fighting"> Fighting </option> 
+                <option value="Ice"> Ice </option> 
+                <option value="Water"> Water </option> 
+            </select>
+
+            Type 2: <select>
+                <option value="Normal"> Normal </option> 
+                <option value="Fire"> Fire </option> 
+                <option value="Bug"> Bug </option> 
+                <option value="Dark"> Dark </option> 
+                <option value="Flying"> Flying </option> 
+                <option value="Poison"> Poison </option> 
+                <option value="Psychic"> Psychic </option>
+                <option value="Ghost"> Ghost </option> 
+                <option value="Dragon"> Dragon </option> 
+                <option value="Electric"> Electric </option> 
+                <option value="Grass"> Grass </option> 
+                <option value="Rock"> Rock </option> 
+                <option value="Fairy"> Fairy </option> 
+                <option value="Ground"> Ground </option> 
+                <option value="Steel"> Steel </option> 
+                <option value="Fighting"> Fighting </option> 
+                <option value="Ice"> Ice </option> 
+                <option value="Water"> Water </option> 
+            </select>
+            </br>
+        
+            <br>
+            Evolves From: <input type="text" id="Evolves" name="Evolves">
+            Evolves To: <input type="text" id="Evolves" name="Evolves">
+            </br>
+
+            <br>
+            Nickname: <input type="text" id="Nickname" name="Nickname">
+            </br>
+
+            <br>
+            Birthday: <input type="date" id="Birthday" name="Birthday">
+            </br>
+
+            <br>
+            <input type="submit">
+            </br>
+        
+
+            <br>    
+            <table border="2" align="center">
+                <tr>
+                    
+                    <th> National Dex </th>
+                    <th> Generation </th>
+                    <th> Pokemon Name</th>
+                    <th> Image </th>
+                    <th> Type 1</th>
+                    <th> Type 2</th>
+                    <th> Evolves From</th>
+                    <th> Evolves To </th>
+                    <th> Nickname</th>
+                    <th> Birthday</th>
+
+                </tr>
+                
+            </table>
+            </br>
+        </center>
+            
+
+        </form>
+    </body>
+  </html>  
