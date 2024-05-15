@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-image: url(Dark1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.subheading {
+    font-size: 1.2rem;
+}
+.Red {
+    font-weight: bold;
+    color: red;
+    font-size: 40px;
+}
+
+img {
+    width: 250px;
+
+}
+
+.white {
+    font-family: Roboto;
+    color:white;
+    font-size: 20;
+}
