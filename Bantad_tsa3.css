@@ -8,7 +8,8 @@ body {
 }
 
 .heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: bolder;
 }
 
 .subheading {
@@ -17,4 +18,16 @@ body {
 .Red {
     font-weight: bold;
     color: red;
+    font-size: 40px;
+}
+
+img {
+    width: 250px;
+
+}
+
+.white {
+    font-family: Roboto;
+    color:white;
+    font-size: 20;
 }
