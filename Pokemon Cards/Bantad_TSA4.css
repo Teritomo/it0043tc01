@@ -1,0 +1,30 @@
+body{
+    background-image: url(Ocean.png)
+    
+}
+
+.card {
+    color: white;
+    text-shadow: 6px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+div {
+    position: relative;
+  }
+  
+  .inner-image {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+  }
+
+.container {
+    padding: 2px 16px;
+    text-align: mid
+    ;
+}
