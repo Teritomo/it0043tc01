@@ -1,0 +1,281 @@
+body {
+    background-image: url('Pokeball Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 80%;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    padding: 8px;
+    transition: transform 0.3s, background-image 0.3s;
+}
+
+.grid-item img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+    background-image: url('gradient.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.pokemon-name-container {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pokemon-name-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .pokemon-name {
+        font-size: 1rem;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.7);
+        text-shadow: 1px 1px 5px white;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .pokeball-icon {
+        width: 30px;
+        height: ;
+        position: static;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .type {
+        display: none;
+    }
+
+    .Zebs img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Solga img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Bold img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Luna img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Cosmo img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Krook img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Necro img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Tako img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Tafi img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Tabu img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Tale img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .Guzz img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pokemon-name-container {
+        display: block;
+    }
+
+    .pokeball-icon {
+        display: none;
+    }
+
+    .psychic {
+        background-color: #ce0f3c;
+    }
+
+    .ghost {
+        background-color: #660b3e;
+    }
+
+    .fairy {
+        background-color: pink;
+    }
+
+    .grass {
+        background-color: #0fb42d;
+    }
+
+    .water {
+        background-color: #0079ff;
+    }
+
+    .electric {
+        background-color: rgb(187, 216, 38);
+    }
+
+    .dark {
+        background-color: darkcyan;
+    }
+
+    .ground {
+        background-color: #9a5a08;
+    }
+
+    .dragon {
+        background-color: #0f6bff;
+    }
+
+    .rock {
+        background-color: #50e9a6;
+    }
+
+    .steel {
+        background-color: rgba(0, 255, 255, 0.822);
+    }
+    .type {
+        align-items: center;
+        display: inline-block;
+        padding: 0.5rem 1.2rem;
+        border-radius: 0.5rem;
+        margin: 0.5rem 0.5rem;
+        color: white;
+        text-shadow: 1px 1px 5px white;
+    }
+
+}
+
+.Tale { 
+    background-color: #fe6a6a;
+ }
+
+.Tabu { 
+    background-color: #a12121; 
+}
+
+.Tafi { 
+    background-color: #44a0e6; 
+}
+
+.Tako { 
+    background-color: #ffff00;
+}
+
+.Krook { 
+    background-color: #a80d0d; 
+}
+
+.Necro { 
+    background-color: #187e70; 
+}
+
+.Cosmo { 
+    background-color: #9e3ec7; 
+}
+
+.Guzz { 
+    background-color: #7c7c77; 
+}
+
+.Luna { 
+    background-color: #7c34c1; 
+}
+
+.Bold { 
+    background-color: #346b8d; 
+}
+
+.Solga { 
+    background-color: #e29c37; 
+}
+
+.Zebs { background-color: #c3f6c7; }
