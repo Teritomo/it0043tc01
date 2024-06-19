@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri;
+}
+
+nav {
+    background: red;
+    height: 80px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 30px;
+    float: left;
+    text-transform: uppercase
+    cursor: pointer;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: orange;
+    transition: .5s;
+}
+
+.content-items img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
