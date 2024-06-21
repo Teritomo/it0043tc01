@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: "Press Start 2P", system-ui;
+  }
+  nav{
+    background: #e30f2b;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #b3ff00;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #fba12a;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+  
+
+.container-body{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 18px;
+  background-image: url(MarioBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sub-container{
+  display: grid;
+  color: white;
+  grid-gap: 30px 10px;
+  padding: 18px;
+  text-shadow: 2px 2px black;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.games {
+  width: 100vh;
+  height: auto;
+  border: 4px white solid;
+  border-radius: 20px;
+}
+
+.sub-container-img{
+  object-fit: cover;
+  height: 150px;
+  min-width: 170px;
+  max-width: 100%;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  background-color: rgb(198, 86, 5);
+  padding: 20px;
+  border-radius: 10px 10px;
+}
+
+.nintendo{
+  grid-column: 1/4;
+  grid-row: 1;
+  padding-left: 100px;
+}
+
+.announce{
+  grid-column: 1/4;
+  grid-row: 2;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.announcer{
+  margin: 5px;
+}
+
+.rabbids{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.run{
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.wonder{
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.kart{
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.odyssey{
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.run img {
+  width: 300px;
+  border: 2px white solid;
+  border-radius: 10px;
+  height: 180px;
+}
+
+.rabbid img {
+  width: 300px;
+  border: 2px white solid;
+  border-radius: 10px;
+  height: 180px;
+}
+
+.kart img {
+  width: 300px;
+  border: 2px white solid;
+  border-radius: 10px;
+  height: 180px;
+}
+
+.paper img {
+  width: 300px;
+  border: 2px white solid;
+  border-radius: 10px;
+  height: 180px;
+}
+
+.odyssey img {
+  width: 300px;
+  border: 2px white solid;
+  border-radius: 10px;
+  height: 180px;
+}
+
+.wonder img {
+  width: 300px;
+  border: 2px white solid;
+  border-radius: 10px;
+  height: 180px;
+}
+
+.sub2-container{
+  display: grid;
+  text-shadow: 2px 2px 5pxblack;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: yellow;
+  grid-gap: 30px 20px;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+}
+
+.calendar img{
+  background-position: center;
+  border-radius: 20px;
+  border: 4px white solid;
+  object-fit: cover;
+  max-width: 460px;
+  max-height: 640px;
+}
+
+.char{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.char-details{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px
+}
+
+.mario img{
+  height: auto;
+  width: 256px;
+  border: 2px black solid;
+  border-radius: 25px;
+}
+
+.luigi img{
+  height: auto;
+  width: 256px;
+  border: 2px black solid;
+  border-radius: 25px;
+}
+
+.red{
+  color: rgb(226, 9, 9);
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  justify-content: center;
+}
+
+.green{
+  color: rgb(30, 255, 0);
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  justify-content: center;
+}
+
+.details {
+  text-shadow: 2px 2px 5px black;
+}
+
+.title {
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+}
+@media(max-width:1300px){
+  .nintendo{
+      padding-left: 0;
+  }
+}
+
+@media(max-width:1230px){
+  .nintendo{
+      display: none;
+  }
+
+  .announce{
+      grid-column: 1/3;
+      grid-row: 1;
+      text-align: center;
+      padding-left: 0;
+  }
+
+  .sub-container{
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .paper{
+      grid-column: 1;
+      grid-row: 7;
+  }
+
+  .kart{
+      grid-column: 2;
+      grid-row: 7;
+  }
+}
+
+@media(max-width:980px){
+  .sub-container{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .announce{
+      grid-column: 1;
+      grid-row: 1;
+  }
+
+  .rabbids{
+      grid-column: 1;
+      grid-row: 4;
+  }
+
+  .run{
+      grid-column: 1;
+      grid-row: 5;
+  }
+
+  .wonder{
+      grid-column: 1;
+      grid-row: 6;
+  }
+
+  .kart{
+      grid-column: 1;
+      grid-row: 7;
+  }
+
+  .odyssey{
+      grid-column: 1;
+      grid-row: 8;
+  }
+  .paper{
+    grid-column: 1;
+    grid-row: 9;
+}
+
+  .calendar{
+      display: none;
+  }
+
+  .sub2-container{
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+  }
+
+  .char-details{
+      flex-direction: column;
+      padding-right: 0;
+  }
+
+  .details{
+      padding-bottom: 20px;
+  }
+  
+  .header-char{
+      text-align: center;
+  }
+
+  .announcer{
+      margin: 0;
+  }
+
+}
