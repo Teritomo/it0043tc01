@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flex-Box Simulator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="subcontainer">
+            <h2> Flex-Box Simulator </h2>
+            <button id="resetflexbox"> Reset Flexbox </button>
+            <input type="number" name=" " id="count" value="0">
+            <button id="gap"> Gap </button>
+
+            <h3> Justify Content </h3>
+            <button id="justifystart"> Start </button>
+            <button id="justifycenter"> Center </button>
+            <button id="justifyend"> End </button>
+            <button id="justifybetween"> Space Between </button>
+            <button id="justfiyaround"> Space Around </button>
+            <button id="justifyevenly"> Space Evenly </button>
+
+            <h3> Align Items </h3>
+            <button id="alignstart"> Start </button>
+            <button id="aligncenter"> Center </button>
+            <button id="alignend"> End </button>
+
+            <h3> Flex Grow </h3>
+            <button id="resetgrow"> Reset </button>
+            <button id="growall"> Grow All </button>
+            <input type="number" name=" " id="growvalue" placeholder="Grow Value">
+            <button id="growb1"> Grow B-1 </button>
+            <input type="number" name=" " id="growvalue" placeholder="Grow Value">
+            <button id="growb2"> Grow B-2 </button>
+            <input type="number" name=" " id="growvalue" placeholder="Grow Value">
+            <button id="growb3"> Grow B-3 </button>
+        </div>
+
+        <div class="output">
+            <div class="flex-container">
+                <div class="flex-item" id="flexA"> A </div>
+                <div class="flex-item" id="flexB"> B </div>
+                <div class="flex-item" id="flexC"> C </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="FlexboxJS.js"> </script>
+
+</body>
+</html>
