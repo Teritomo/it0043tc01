@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="subcontainer">
+            <h2>Flex-Box Simulator</h2>
+            <button id="resetflexbox" onclick="resetFlexbox()">Reset Flexbox</button>
+            <input type="number" id="gap" value="0" onchange="setGap()">
+            <button onclick="setGap()">Set Gap</button>
+
+            <h3>Justify Content</h3>
+            <button onclick="justifyContent(1)">Start</button>
+            <button id="justifycenter" onclick="justifyContent(2)">Center</button>
+            <button id="justifyend" onclick="justifyContent(3)">End</button>
+            <button id="justifybetween" onclick="justifyContent(4)">Space Between</button>
+            <button id="justfiyaround" onclick="justifyContent(5)">Space Around</button>
+            <button id="justifyevenly" onclick="justifyContent(6)">Space Evenly</button>
+
+            <h3>Align Items</h3>
+            <button id="alignstart" onclick="alignItems(1)">Start</button>
+            <button id="aligncenter" onclick="alignItems(2)">Center</button>
+            <button id="alignend" onclick="alignItems(3)">End</button>
+
+            <h3>Flex Grow</h3>
+            <button id="resetgrow" onclick="resetFlexGrow()">Reset</button>
+            <button id="growall" onclick="setFlexGrow('all')">Grow All</button>
+            <input type="number" id="grow1" placeholder="Grow Value for Box 1">
+            <button id="growb1" onclick="setFlexGrow('A', document.getElementById('grow1').value)">Grow B-1</button>
+            <input type="number" id="grow2" placeholder="Grow Value for Box 2">
+            <button id="growb2" onclick="setFlexGrow('B', document.getElementById('grow2').value)">Grow B-2</button>
+            <input type="number" id="grow3" placeholder="Grow Value for Box 3">
+            <button id="growb3" onclick="setFlexGrow('C', document.getElementById('grow3').value)">Grow B-3</button>
+        </div>
+
+        <div class="output">
+            <div class="flex-container">
+                <div class="flex-item" id="flexA">A</div>
+                <div class="flex-item" id="flexB">B</div>
+                <div class="flex-item" id="flexC">C</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="FlexboxJS.js"></script>
+</body>
+</html>
